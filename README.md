@@ -1,8 +1,6 @@
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/) 
 [![LaTeX Project Public Licensee](https://img.shields.io/badge/license-LPPL-green)](https://www.latex-project.org/lppl/) 
-[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex)
-
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/graphs/commit-activity) 
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/trincadev/cv-latex-twentyoneseconds)
 
 [![Donate](https://img.shields.io/badge/Paypal-Donate%20to%20author-blue)](https://paypal.me/trinkuz?country.x=IT&locale.x=it_IT) [![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/trincadev/cv-latex-twentyoneseconds/issues)
 
