@@ -1,0 +1,157 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty One Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (2022/12/29)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+%
+% profile image is from https://publicdomainvectors.org/photos/nayrhcrel-alice-32.png
+%
+% License
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Alessandro Trinca Tornidor (alessandro at trinca dot tornidor dot com)
+%% Copyright 2022-now Alessandro Trinca Tornidor (alessandro at trinca dot tornidor dot com)
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Alessandro Trinca Tornidor
+%
+% This work consists of the files template.tex and twentyonesecondcv.cls
+% and the derived file twentyonesecondcv.pdf
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentyonesecondcv} % a4paper for A4
+
+\profilepic{image.png} % Profile picture
+\cvjobtitle{Adventurer, golf player} % Job title/career
+\cvname{Alice in Wonderland} % Your name
+\cvaddress{United Kingdom} % Short address/location, use \newline if more than 1 line is required
+\cvsitepersonal{en.wikipedia.org}%personal site
+\cvstackoverflow{9999999999999} % Personal website
+\cvlinkedin{aliceinwonderland-linkedin}
+\cvskypeurl{aliceinwonderland-skype} % Skype
+\cvgithub{aliceinwonderland-github}
+\cvmail{alice@wonderland.com} % Email address
+
+\skills{{pursuer of rabbits/5},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+
+\skillstext{{lovely/4},{narcissistic/3}}
+
+\begin{document}
+\sidesection{
+    \makeheaderprofile
+    \makeinfoprofile
+    \par\vfill
+    \makefooterprofile
+} % for some reason yoy can't have a new line here...
+\mainsection{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{About me}
+
+Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.
+
+\section{education}
+
+\begin{twenty}
+  \twentyitem
+    {since 1865}
+    {Ph.D. {\normalfont candidate in Computer Science}}
+    {Wonderland}
+    {Aenean vitae faucibus dolor. Donec leo dui, varius vel pharetra sit amet, aliquet tincidunt purus. Vivamus nulla enim, facilisis vel mi eget, elementum tincidunt felis. In id nibh sit amet lorem mollis congue. Quisque sit amet sagittis tortor. Sed elementum ornare nunc, gravida porta dui lobortis id. Aenean ullamcorper blandit porta. Morbi in urna pharetra, facilisis quam eu, condimentum mauris. Fusce eleifend purus ligula. Praesent sollicitudin, mauris ut lobortis tristique, mi tortor efficitur dolor, id cursus massa massa at lacus. Etiam eu sapien condimentum, cursus velit non, viverra felis. Etiam sagittis nec.}
+  \twentyitem
+    {1863-1865}
+    {M.Sc. magna cum laude}
+    {Wonderland}
+    {Majoring in Computer Science. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra in est id scelerisque. Vestibulum id dolor tellus. Nulla quis magna nunc. Suspendisse non ex vel quam tincidunt tincidunt a bibendum erat. Proin convallis, diam quis egestas faucibus, arcu ipsum sagittis lacus, non lobortis nibh turpis eget odio. Nullam porta neque lorem, at tincidunt lectus pharetra eget.}
+  \twentyitem
+    {1861-1863}
+    {B.Sc. magna cum laude}
+    {Wonderland}
+    {Majoring in Computer Science... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}
+  \twentyitem
+    {1856-1861}
+    {High school}
+    {Wonderland}
+    {Specializing in mathematics and physics.}
+\end{twenty}
+
+\section{Other Education and certifications}
+
+\begin{twentymid} % Environment for a list with descriptions
+    \twentymiditem{10/1900}{\href{https://en.wikipedia.org/wiki/Down_the_Rabbit_Hole}{\textcolor{mainblue}{First link}}}{Org}
+    \twentymiditem{11/1933}{Second list element. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}{Organization name}
+    \twentymiditem{12/1950}{\href{https://en.wikipedia.org/wiki/Down_the_Rabbit_Hole}{\textcolor{mainblue}{Third link}}.
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla}{Organization name two}
+\end{twentymid}
+
+\section{awards}
+
+\begin{twentyshort}
+  \twentyitemshort
+    {1987}
+    {All-Time Best Fantasy Novel.}
+  \twentyitemshort
+    {1998}
+    {All-Time Best Fantasy Novel before 1990.}
+\end{twentyshort}
+
+}
+% \newpage
+
+% \noindent
+\sidesection{
+    \makeheaderprofile
+    \makeskillsprofile
+    \par\vfill
+    \makefooterprofile
+}
+\mainsection{
+
+\section{experience}
+
+\begin{twenty}
+  \twentyitem
+    {1900}
+    {Alice in Wonderland-The Circra (1900's) Silent Film.}
+    {Film}
+    {The first Alice on film was over a hundred years ago. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}
+  \twentyitem
+    {1933}
+    {Alice in Wonderland 1933 version.}
+    {Film}
+    {This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
+\twentyitem
+    {1951}
+    {Disney Film.}
+    {Film}
+    {Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
+\end{twenty}
+
+\section{other information}
+
+Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a “poky little house,” and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod id nisi nec dapibus. Nunc sed cursus nisi, in feugiat elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent dictum vehicula est non dapibus. Praesent id tincidunt quam. Morbi pharetra, lorem non faucibus vestibulum, turpis eros blandit felis, at mollis diam metus in elit. In venenatis pharetra leo vel elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nulla pellentesque, vestibulum lorem in, vehicula velit. Integer vitae fringilla ipsum. Donec vel pretium libero.
+
+In sed ligula a turpis tristique interdum a ut risus. Nullam at euismod leo, ac molestie urna. Curabitur enim felis, ultricies quis dui ac, bibendum auctor dui. Proin aliquet nulla arcu, at pulvinar eros eleifend at. Aliquam erat volutpat. Duis augue mauris, aliquam sit amet lacinia ut, egestas sit amet est. Aliquam erat lacus, scelerisque non laoreet eu, commodo eget turpis. Nunc nunc mauris, lacinia sed semper quis, venenatis eget enim. Proin viverra in nibh at tincidunt.
+
+Integer molestie, lectus in vehicula consequat, mauris nisi dignissim lacus, et vestibulum ante nisl eu ante. In laoreet eros sit amet justo tempor maximus. Cras quam velit, feugiat vel risus vitae, tincidunt elementum.
+}
+\end{document}
