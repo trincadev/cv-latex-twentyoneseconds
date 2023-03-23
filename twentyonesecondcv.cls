@@ -38,6 +38,7 @@
 \usepackage{blindtext}
 \usepackage{xcolor}
 \usepackage{geometry}
+\usepackage{titlesec}
 \usepackage[most]{tcolorbox}
 \geometry{margin=0pt}
 
@@ -69,9 +70,10 @@
 \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
 
 \definecolor{gray}{HTML}{4D4D4D}
-\definecolor{sidecolor}{HTML}{E7E7E7}
-\definecolor{mainblue}{HTML}{0E5484}
-\definecolor{maingray}{HTML}{B9B9B9}
+\definecolor{sidecolor}{HTML}{f2f2f2}
+\definecolor{mainblue}{HTML}{000F61}
+\definecolor{maingray}{HTML}{f2f2f2}
+\definecolor{bluecolorurl}{HTML}{142376}
 
 \renewcommand{\bfseries}{\color{gray}} % Make \textbf produce coloured text instead
 
@@ -125,7 +127,14 @@
 }
 
 % show different url and colorize 
-\newcommand{\colorurl}[1]{\href{https://{#1}}{\textcolor{mainblue}{{#1}}}}
+% \newcommand{\colorhrefcustom}[2]{#1}{\textcolor{bluecolorurl}{{#2}}}
+\newcommand{\colorhrefcustom}[2]{\href{#1}{\textcolor{bluecolorurl}{{#2}}}}
+\newcommand{\colorhref}[1]{
+    \colorhrefcustom{#1}{#1}
+}
+%\newcommand{\colorhref}[1]{
+    %\href{#1}{\textcolor{bluecolorurl}{{#1}}}
+%}
 
 % Define custom commands for CV info
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
@@ -209,6 +218,7 @@
     \profilesection{Languages}
 
     \skills
+    \bigskip
     \skillstext
     \scriptsize
     Scale: 0 (basic skills) - 6 (expert).
@@ -216,10 +226,11 @@
     %------------------------------------------------
 }
 
-\newcommand{\makefooterprofile}{
+\newcommand{\makefooterprofile}[2]{
         \smallskip
-		I hereby authorize the use of my personal data in compliance with the Italian D. Lgs. 196/2003, art. 13.\newline
-		References and private repositories are available upon request.    
+        \scriptsize
+		#1.\newline
+		#2
 }
 
 
@@ -227,28 +238,16 @@
 %	 COLOURED SECTION TITLE BOX
 %----------------------------------------------------------------------------------------
 
-% Command to create the rounded boxes around the first three letters of section titles
-\newcommand*\round[2]{%
-	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
-}
-
-\newcounter{colorCounter}
-\newcommand{\sectioncolor}[1]{%
-        \bigskip
-	{%
-		\round{#1}{
-			\ifcase\value{colorCounter}%
-			mainblue\fi%
-		}%
-	}%
-	\stepcounter{colorCounter}%
-        \smallskip
+\newcommand{\customsection}[1]{%
+  \colorbox{maingray}{\parbox{\dimexpr\textwidth-2\fboxsep}{\large #1}}
 }
 
 \renewcommand{\section}[1]{
 	{%
+            \bigskip
 		\color{mainblue}%
-		\Large\sectioncolor{#1}%
+		\customsection{#1}%
+            % \smallskip
 	}
 }
 

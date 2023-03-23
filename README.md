@@ -1,13 +1,10 @@
-[![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/) 
-[![LaTeX Project Public Licensee](https://img.shields.io/badge/license-LPPL-green)](https://www.latex-project.org/lppl/) 
+[![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+[![LaTeX Project Public Licensee](https://img.shields.io/badge/license-LPPL-green)](https://www.latex-project.org/lppl/)
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/trincadev/cv-latex-twentyoneseconds)
 
 [![Donate](https://img.shields.io/badge/Paypal-Donate%20to%20author-blue)](https://paypal.me/trinkuz?country.x=IT&locale.x=it_IT) [![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/trincadev/cv-latex-twentyoneseconds/issues)
 
-
-
-
-# How I created my CV in latex format.
+# How I created my CV in latex format
 
 I started from the [twentyseconds](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex) latex theme.
 
@@ -15,7 +12,7 @@ I like the two column layout but not the left column created outside of the docu
 
 First of all I created this basic latex document:
 
-```
+```latex
 % twentyonesecondcv.cls
 \ProvidesClass{twentyonesecondcv}[2017/01/08 CV class]
 \documentclass{article}
@@ -45,7 +42,7 @@ First of all I created this basic latex document:
 }
 ```
 
-```
+```latex
 % tex document
 \documentclass[letterpaper]{twentyonesecondcv} % a4paper for A4
 
@@ -66,6 +63,7 @@ You can notice that this example is already on two pages: it's ok to keep your c
 Of course latex is good because the markup engine should keep you free to think about your content, not concentrating on handle manual placements of borders, paragraph positions and so on. My biggest problem about this was filling empty space: commands like `\vfill` aren't working within `newtcolorbox` because the box has no fixed height.
 
 Luckily (should be from version 3.70) it's possible to change this behavior; for this you need the options
+
 - `height=<value>`
 - `text fill`
 
@@ -75,6 +73,6 @@ Last precaution is to avoid commands enforcing fixed value settings like the `ti
 
 For some reason instead the custom commands used to create the skill sections (\skills and \skillstext) works fine.
 
-Finally [here](/twentyoneseconds.pdf) the result!
+Finally [here](./twentyoneseconds.pdf) the result!
 
-I'm publishing also on [overleaf](https://www.overleaf.com/).
+I published this latex template on this [overleaf page](https://www.overleaf.com/latex/templates/twentyoneseconds/xmvbqtfmnycf).
