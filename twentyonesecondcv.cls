@@ -13,7 +13,7 @@
 % Original author:
 % Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
 % Alessandro Trinca Tornidor (alessandro at trinca dot tornidor dot com)
-%% Copyright 2022-now Alessandro Trinca Tornidor (alessandro at trinca dot tornidor dot com)
+%% Copyright 2023-now Alessandro Trinca Tornidor (alessandro at trinca dot tornidor dot com)
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
@@ -119,6 +119,7 @@
 \newlength{\SectionTitleLength} % Define a new length to hold the width of the section title
 \newcommand{\profilesection}[1]{%
 	\setlength\TotalSectionLength{\linewidth}% Set the total line width
+	\vspace{4pt}% Whitespace before the section title
 	\settowidth{\SectionTitleLength}{\large #1 }% Calculate the width of the section title
 	\addtolength\TotalSectionLength{-\SectionTitleLength}% Subtract the section title width from the total width
 	\addtolength\TotalSectionLength{-2.22221pt}% Modifier to remove overfull box warning
@@ -127,14 +128,10 @@
 }
 
 % show different url and colorize 
-% \newcommand{\colorhrefcustom}[2]{#1}{\textcolor{bluecolorurl}{{#2}}}
 \newcommand{\colorhrefcustom}[2]{\href{#1}{\textcolor{bluecolorurl}{{#2}}}}
 \newcommand{\colorhref}[1]{
     \colorhrefcustom{#1}{#1}
 }
-%\newcommand{\colorhref}[1]{
-    %\href{#1}{\textcolor{bluecolorurl}{{#1}}}
-%}
 
 % Define custom commands for CV info
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
@@ -146,7 +143,6 @@
 \newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
 \newcommand{\cvskypeurl}[1]{\renewcommand{\cvskypeurl}{#1}}
 \newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
-\newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
@@ -167,20 +163,24 @@
 	}
 }
 
-% Command for printing skills text
-\newcommand\skillstext[1]{ 
-	\renewcommand{\skillstext}{
-		\begin{flushleft}
-			\foreach [count=\i] \x/\y in {#1}{ 
-				\x$ \star $\y
-			}
-		\end{flushleft}
-	}
-}
-
 %----------------------------------------------------------------------------------------
 %	 SIDEBAR LAYOUT
 %----------------------------------------------------------------------------------------
+
+\newcommand{\makenamejobrows}{
+    
+    %------------------------------------------------
+    
+    {\Large\color{mainblue}\cvname\medskip}
+    
+    {\Large\color{black!80}\cvjobtitle\bigskip}
+
+}
+
+\newcommand{\makeheaderprofilenoimg}{
+    \bigskip
+    \makenamejobrows
+}
 
 \newcommand{\makeheaderprofile}{
     
@@ -189,11 +189,7 @@
     
     %------------------------------------------------
     
-    {\Large\color{mainblue}\cvname\medskip}
-    
-    %------------------------------------------------
-    
-    {\Large\color{black!80}\cvjobtitle\bigskip}
+    \makenamejobrows
 
 }
 
@@ -213,17 +209,33 @@
 }
 
 \newcommand{\makeskillsprofile}{
+
     %------------------------------------------------
         % In case of longer "about me" or "languages" section, move languages to \makeprofileshort command
+        
     \profilesection{Languages}
 
     \skills
     \bigskip
-    \skillstext
     \scriptsize
     Scale: 0 (basic skills) - 6 (expert).
+    \normalsize
     
     %------------------------------------------------
+}
+
+\newcommand{\aboutme}[1]{
+    \profilesection{About me}
+    \begin{flushleft}
+        #1
+    \end{flushleft}
+}
+
+\newcommand{\customsidesection}[2]{
+    \profilesection{#1}
+    \begin{flushleft}
+        #2
+    \end{flushleft}
 }
 
 \newcommand{\makefooterprofile}[2]{

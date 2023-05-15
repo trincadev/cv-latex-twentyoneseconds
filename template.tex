@@ -49,119 +49,134 @@
 
 \skills{{One skill/5},{Another skill/4},{Golf/4.3},{fourth/4},{Java/3}}
 
-\skillstext{{skill text one/4},{skill text two/3}}
-
 \begin{document}
 \sidesection{
     \makeheaderprofile
     \makeinfoprofile
+    \aboutme{Short section about myself.
+    Archimedes of Syracuse was a Greek mathematician, physicist, engineer, astronomer, and inventor from the ancient city of Syracuse in Sicily (From wikipedia.org).}
+    \customsidesection{Side section A, pag.1}{Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum.}
+    \customsidesection{Side section B, pag.1}{Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus.}
     \par\vfill
     \makefooterprofile{Footer profile for page one.}{Footer profile row two with some more informations.}
-} % for some reason yoy can't have a new line here...
+    
+}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% for some reason yoy can't have a new line here...
 \mainsection{
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Bibliography}
+    
+    Praesent id tincidunt quam. Morbi pharetra, lorem non faucibus vestibulum,
+    turpis eros blandit felis, at mollis diam metus in elit. In venenatis pharetra leo vel
+    elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nulla pel-
+    lentesque, vestibulum lorem in, vehicula velit. Integer vitae fringilla ipsum. Donec vel
+    pretium libero.
+    
+    \section{Education}
+    
+    \begin{twenty}
+      \twentyitem
+        {1990 - 1995}
+        {Ph.D. {\normalfont candidate in Computer Science}}
+        {University three}
+        {Aenean vitae faucibus dolor. Donec leo dui, varius vel pharetra sit amet, aliquet tincidunt purus. Vivamus nulla enim, facilisis vel mi eget, elementum tincidunt felis. In id nibh sit amet lorem mollis congue. Quisque sit amet sagittis tortor. Sed elementum ornare nunc, gravida porta dui lobortis id. Aenean ullamcorper blandit porta. Morbi in urna pharetra, facilisis quam eu, condimentum mauris. Fusce eleifend purus ligula. Praesent sollicitudin, mauris ut lobortis tristique, mi tortor efficitur dolor, id cursus massa massa at lacus. Etiam eu sapien condimentum, cursus velit non, viverra felis. Etiam sagittis nec.}
+      \twentyitem
+        {1980}
+        {M.Sc. magna cum laude}
+        {University two}
+        {Majoring in Computer Science. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra in est id scelerisque. Vestibulum id dolor tellus. Nulla quis magna nunc. Suspendisse non ex vel quam tincidunt tincidunt a bibendum erat. Proin convallis, diam quis egestas faucibus, arcu ipsum sagittis lacus, non lobortis nibh turpis eget odio. Nullam porta neque lorem, at tincidunt lectus pharetra eget.}
+      \twentyitem
+        {1970-1976}
+        {B.Sc. magna cum laude}
+        {University one}
+        {Majoring in Computer Science... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}
+      \twentyitem
+        {1955 - 1060}
+        {High school}
+        {Hhigh School}
+        {Specializing in mathematics and physics.}
+    \end{twenty}
+    
+    \section{Other Education and certifications}
+    
+    \begin{twentymid} % Environment for a list with descriptions  
+        \twentymiditem{since 2020}{I learned some interesting things on this \colorhrefcustom{https://wikipedia.it}{website}, then I moved on.}{Org}
+        \twentymiditem{10/2015}{I added some fancy pages on \colorhref{https://wikipedia.org}}{Org 2}
+        \twentymiditem{1990 - 2015}{Second list element. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}{Organization name}
+        \twentymiditem{12/1998}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla}{\colorhrefcustom{https://commons.wikimedia.org/wiki/Main_Page}{wikipedia}}
+    \end{twentymid}
+    
+    \section{Awards}
+    
+    \begin{twentyshort}
+      \twentyitemshort
+        {1987}
+        {Some Fantasy Novel.}
+      \twentyitemshort
+        {1998}
+        {Some Essay.}
+    \end{twentyshort}
 
-\section{Bibliography}
-
-Praesent id tincidunt quam. Morbi pharetra, lorem non faucibus vestibulum,
-turpis eros blandit felis, at mollis diam metus in elit. In venenatis pharetra leo vel
-elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nulla pel-
-lentesque, vestibulum lorem in, vehicula velit. Integer vitae fringilla ipsum. Donec vel
-pretium libero.
-
-\section{Education}
-
-\begin{twenty}
-  \twentyitem
-    {1990 - 1995}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {University three}
-    {Aenean vitae faucibus dolor. Donec leo dui, varius vel pharetra sit amet, aliquet tincidunt purus. Vivamus nulla enim, facilisis vel mi eget, elementum tincidunt felis. In id nibh sit amet lorem mollis congue. Quisque sit amet sagittis tortor. Sed elementum ornare nunc, gravida porta dui lobortis id. Aenean ullamcorper blandit porta. Morbi in urna pharetra, facilisis quam eu, condimentum mauris. Fusce eleifend purus ligula. Praesent sollicitudin, mauris ut lobortis tristique, mi tortor efficitur dolor, id cursus massa massa at lacus. Etiam eu sapien condimentum, cursus velit non, viverra felis. Etiam sagittis nec.}
-  \twentyitem
-    {1980}
-    {M.Sc. magna cum laude}
-    {University two}
-    {Majoring in Computer Science. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra in est id scelerisque. Vestibulum id dolor tellus. Nulla quis magna nunc. Suspendisse non ex vel quam tincidunt tincidunt a bibendum erat. Proin convallis, diam quis egestas faucibus, arcu ipsum sagittis lacus, non lobortis nibh turpis eget odio. Nullam porta neque lorem, at tincidunt lectus pharetra eget.}
-  \twentyitem
-    {1970-1976}
-    {B.Sc. magna cum laude}
-    {University one}
-    {Majoring in Computer Science... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}
-  \twentyitem
-    {1955 - 1060}
-    {High school}
-    {Hhigh School}
-    {Specializing in mathematics and physics.}
-\end{twenty}
-
-\section{Other Education and certifications}
-
-\begin{twentymid} % Environment for a list with descriptions  
-    \twentymiditem{since 2020}{I learned some interesting things on this \colorhrefcustom{https://wikipedia.it}{website}, then I moved on.}{Org}
-    \twentymiditem{10/2015}{I added some fancy pages on \colorhref{https://wikipedia.org}}{Org 2}
-    \twentymiditem{1990 - 2015}{Second list element. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}{Organization name}
-    \twentymiditem{12/1998}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla}{\colorhrefcustom{https://commons.wikimedia.org/wiki/Main_Page}{wikipedia}}
-\end{twentymid}
-
-\section{Awards}
-
-\begin{twentyshort}
-  \twentyitemshort
-    {1987}
-    {Some Fantasy Novel.}
-  \twentyitemshort
-    {1998}
-    {Some Essay.}
-\end{twentyshort}
-
+%% end main section
 }
 % \newpage
 
 % \noindent
 \sidesection{
-    \makeheaderprofile
+    \makeheaderprofilenoimg
+    \customsidesection{Side section C, pag.2}{n sed ligula a turpis tristique interdum a ut risus. Nullam at euismod leo, ac molestie urna. Curabitur enim felis, ultricies quis dui ac, bibendum auctor dui. Proin aliquet nulla arcu, at pulvinar eros eleifend at. Aliquam erat volutpat.
+    Duis augue mauris, aliquam sit amet lacinia ut, egestas sit amet est. Aliquam erat lacus, scelerisque non laoreet eu, commodo eget turpis. Nunc nunc mauris, lacinia sed semper quis, venenatis eget enim. Proin viverra in nibh at tincidunt.}
+    
     \makeskillsprofile
+    
     \par\vfill
+    
     \makefooterprofile{Footer profile on page two...}{Footer profile row two with some more informations, again.}
+    
 }
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% for some reason yoy can't have a new line here...
 \mainsection{
+    
+    \section{Experiences}
+    
+    \begin{twenty}
+      \twentyitem
+        {since 2019}
+        {My last work experience}
+        {Work company}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}
+      \twentyitem
+        {1993}
+        {Other side work.}
+        {ACME Corp.}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla.}
+    \twentyitem
+        {07/1993}
+        {Side work.}
+        {ACME Corp.}
+        {Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}
+    \twentyitem
+        {1981}
+        {My first work experience.}
+        {Convenience Store}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris.}
+    \end{twenty}
+    
+    \section{Other informations}
+    
+    Other information section. In sed ligula a turpis tristique interdum a ut risus. Nullam at euismod leo, ac molestie urna. Curabitur enim felis, ultricies quis dui ac, bibendum auctor dui. Proin aliquet nulla arcu, at pulvinar eros eleifend at. Aliquam erat volutpat. Duis augue mauris, aliquam sit amet lacinia ut, egestas sit amet est. Aliquam erat lacus, scelerisque non laoreet eu, commodo eget turpis. Nunc nunc mauris, lacinia sed semper quis, venenatis eget enim. Proin viverra in nibh at tincidunt.
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod id nisi nec dapibus. Nunc sed cursus nisi, in feugiat elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent dictum vehicula est non dapibus. Praesent id tincidunt quam. Morbi pharetra, lorem non faucibus vestibulum, turpis eros blandit felis, at mollis diam metus in elit. In venenatis pharetra leo vel elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nulla pellentesque, vestibulum lorem in, vehicula velit. Integer vitae fringilla ipsum. Donec vel pretium libero.
+    
+    In sed ligula a turpis tristique interdum a ut risus. Nullam at euismod leo, ac molestie urna. Curabitur enim felis, ultricies quis dui ac, bibendum auctor dui. Proin aliquet nulla arcu, at pulvinar eros eleifend at. Aliquam erat volutpat. Duis augue mauris, aliquam sit amet lacinia ut, egestas sit amet est. Aliquam erat lacus, scelerisque non laoreet eu, commodo eget turpis. Nunc nunc mauris, lacinia sed semper quis, venenatis eget enim. Proin viverra in nibh at tincidunt.
+    
+    Integer molestie, lectus in vehicula consequat, mauris nisi dignissim lacus, et vestibulum ante nisl eu ante. In laoreet eros sit amet justo tempor maximus. Cras quam velit, feugiat vel risus vitae, tincidunt elementum.
 
-\section{Experiences}
-
-\begin{twenty}
-  \twentyitem
-    {since 2019}
-    {My last work experience}
-    {Work company}
-    {Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}
-  \twentyitem
-    {1993}
-    {Other side work.}
-    {ACME Corp.}
-    {Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla.}
-\twentyitem
-    {07/1993}
-    {Side work.}
-    {ACME Corp.}
-    {Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}
-\twentyitem
-    {1981}
-    {My first work experience.}
-    {Convenience Store}
-    {Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris.}
-\end{twenty}
-
-\section{Other informations}
-
-Other information section. In sed ligula a turpis tristique interdum a ut risus. Nullam at euismod leo, ac molestie urna. Curabitur enim felis, ultricies quis dui ac, bibendum auctor dui. Proin aliquet nulla arcu, at pulvinar eros eleifend at. Aliquam erat volutpat. Duis augue mauris, aliquam sit amet lacinia ut, egestas sit amet est. Aliquam erat lacus, scelerisque non laoreet eu, commodo eget turpis. Nunc nunc mauris, lacinia sed semper quis, venenatis eget enim. Proin viverra in nibh at tincidunt.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod id nisi nec dapibus. Nunc sed cursus nisi, in feugiat elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent dictum vehicula est non dapibus. Praesent id tincidunt quam. Morbi pharetra, lorem non faucibus vestibulum, turpis eros blandit felis, at mollis diam metus in elit. In venenatis pharetra leo vel elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nulla pellentesque, vestibulum lorem in, vehicula velit. Integer vitae fringilla ipsum. Donec vel pretium libero.
-
-In sed ligula a turpis tristique interdum a ut risus. Nullam at euismod leo, ac molestie urna. Curabitur enim felis, ultricies quis dui ac, bibendum auctor dui. Proin aliquet nulla arcu, at pulvinar eros eleifend at. Aliquam erat volutpat. Duis augue mauris, aliquam sit amet lacinia ut, egestas sit amet est. Aliquam erat lacus, scelerisque non laoreet eu, commodo eget turpis. Nunc nunc mauris, lacinia sed semper quis, venenatis eget enim. Proin viverra in nibh at tincidunt.
-
-Integer molestie, lectus in vehicula consequat, mauris nisi dignissim lacus, et vestibulum ante nisl eu ante. In laoreet eros sit amet justo tempor maximus. Cras quam velit, feugiat vel risus vitae, tincidunt elementum.
 }
 \end{document}

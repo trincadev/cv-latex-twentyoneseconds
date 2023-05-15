@@ -76,3 +76,13 @@ For some reason instead the custom commands used to create the skill sections (\
 Finally [here](./twentyoneseconds.pdf) the result!
 
 I published this latex template on this [overleaf page](https://www.overleaf.com/latex/templates/twentyoneseconds/xmvbqtfmnycf).
+
+## Updates
+
+### 2023-05-15
+
+I added some options about:
+
+- a way to hide the picture and display only the name / surname and job description row
+- custom side sections
+- removed a broken command (`\skillstext`)
