@@ -198,11 +198,17 @@
         % \ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
         % \ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
         \ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\faMapMarker}} & \cvaddress\\}
-        \ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\large\icon{\faGithub}} & \href{https://github.com/\cvgithub}{\textcolor{mainblue}{{\cvgithub}}}\\}
-        \ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\large\icon{\Mundus}} & \href{https://\cvsitepersonal}{\textcolor{mainblue}{{\cvsitepersonal}}}\\}
-        \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\cvmail}{\textcolor{mainblue}{{\cvmail}}}\\}
+        
+        \ifthenelse{\equal{\cvsitepersonal}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{https://\cvsitepersonal}{\textcolor{mainblue}{{\cvsitepersonal}}}\\}
+        
+        \ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\Large\icon{\faGithub}} & \href{https://github.com/\cvgithub}{\textcolor{mainblue}{{\cvgithub}}}\\}
+        
+        \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{@}} & \href{mailto:\cvmail}{\textcolor{mainblue}{{\cvmail}}}\\}
+        
         \ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}} & \href{https://www.linkedin.com/in/\cvlinkedin/en}{\textcolor{mainblue}{{\cvlinkedin}}}\\}
+        
         \ifthenelse{\equal{\cvskypeurl}{}}{}{\textsc{\Large\icon{\faSkype}} & \href{skype:\cvskypeurl?chat}{\textcolor{black!80}{{\cvskypeurl}}}\\}
+        
         \ifthenelse{\equal{\cvstackoverflow}{}}{}{\textsc{\Large\icon{\faStackOverflow}} & \href{https://stackoverflow.com/users/\cvstackoverflow}{\textcolor{mainblue}{{\cvstackoverflow}}}\\}
     \end{tabular}
     
