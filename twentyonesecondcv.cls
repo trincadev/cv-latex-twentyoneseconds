@@ -203,7 +203,7 @@
         
         \ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\Large\icon{\faGithub}} & \href{https://github.com/\cvgithub}{\textcolor{mainblue}{{\cvgithub}}}\\}
         
-        \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{@}} & \href{mailto:\cvmail}{\textcolor{mainblue}{{\cvmail}}}\\}
+        \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{\faAt}} & \href{mailto:\cvmail}{\textcolor{mainblue}{{\cvmail}}}\\}
         
         \ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}} & \href{https://www.linkedin.com/in/\cvlinkedin/en}{\textcolor{mainblue}{{\cvlinkedin}}}\\}
         
