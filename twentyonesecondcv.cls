@@ -195,11 +195,11 @@
 
 \newcommand{\makeinfoprofile}{
     \begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
-        % \ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
-        % \ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
+        % \ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\faInfo}} & \cvdate\\}
+        % \ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\faPhone}} & \cvnumberphone\\}
         \ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\faMapMarker}} & \cvaddress\\}
         
-        \ifthenelse{\equal{\cvsitepersonal}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{https://\cvsitepersonal}{\textcolor{mainblue}{{\cvsitepersonal}}}\\}
+        \ifthenelse{\equal{\cvsitepersonal}{}}{}{\textsc{\Large\icon{\faGlobe}} & \href{https://\cvsitepersonal}{\textcolor{mainblue}{{\cvsitepersonal}}}\\}
         
         \ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\Large\icon{\faGithub}} & \href{https://github.com/\cvgithub}{\textcolor{mainblue}{{\cvgithub}}}\\}
         
