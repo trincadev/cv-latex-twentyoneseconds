@@ -42,14 +42,19 @@
 
 %% Mandatory informations used by \makeinfoprofile. To hide these fields leave the contents of the macro empty (e.g. '\cvsitepersonal{}' instead than '\cvsitepersonal{en.wikipedia.org}')
 %% See https://tex.stackexchange.com/a/692525/109031
-\cvaddress{Address, nation} % Short address/location, use \newline if more than 1 line is required
-\cvsitepersonal{example.com}%personal site
-\cvstackoverflow{9999999999876} % Personal website
+\cvbirthdate{15 August 1980}
+\cvnumberphone{+01 2345678901}
+\cvaddress{Address, Nation}        % Short address/location, use \newline if more than 1 line is required
+\cvsitepersonal{example.com}       % personal site
+\cvstackoverflow{9999999999876}
 \cvlinkedin{name-surname-linkedin}
-\cvskypeurl{name-surname-skype} % Skype
-\cvgithub{name-surname-github}
-\cvmail{name@surname.com} % Email address
+\cvskypeurl{name-surname-skype}
+\cvgithub{name-surname-github}     
+\cvmail{name@surname.com}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \skills{{One skill/5},{Another skill/4},{Golf/4.3},{fourth/4},{Java/3}}
 
 \begin{document}
@@ -59,7 +64,7 @@
     \makeinfoprofile
     \aboutme{Short section about myself.
     It's possible to hide rows created with \textbackslash\texttt{makeinfoprofile} command leaving the macros empty (e.g. \textbackslash\texttt{cvsitepersonal\{\}} instead than \textbackslash\texttt{cvsitepersonal\{example.com\}}).}
-    \customsidesection{Side section A, pag.1}{Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum.}
+    \customsidesection{It's possible to hide the profile picture changing \textbackslash\texttt{makeheaderprofilenoimg} with \textbackslash\texttt{makeheaderprofilenoimg}, then is possible to remove \textbackslash\texttt{profilepic\{image.png\}}).
     \customsidesection{Side section B, pag.1}{Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla, eleifend diam vel, ultricies mauris. Nunc interdum diam vel magna egestas posuere. Mauris sodales urna vitae neque imperdiet tempus.}
     \par\vfill
     \makefooterprofile{Footer profile for page one.}{Footer profile row two with some more informations.}
@@ -68,10 +73,6 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % for some reason yoy can't have a new line here...
 \mainsection{
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     \section{Bibliography}
     
@@ -144,7 +145,7 @@
     
 }
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% for some reason yoy can't have a new line here...
+% for some reason there is no way to have a new line here...
 \mainsection{
     
     \section{Experiences}

@@ -134,10 +134,10 @@
 }
 
 % Define custom commands for CV info
-\newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
+\newcommand{\cvbirthdate}[1]{\renewcommand{\cvbirthdate}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
-\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
+\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvsitepersonal}[1]{\renewcommand{\cvsitepersonal}{#1}}
 \newcommand{\cvstackoverflow}[1]{\renewcommand{\cvstackoverflow}{#1}}
 \newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
@@ -195,9 +195,11 @@
 
 \newcommand{\makeinfoprofile}{
     \begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
-        % \ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\faInfo}{12pt}} & \cvdate\\}
-        % \ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\faPhone}{12pt}} & \cvnumberphone\\}
+        \ifthenelse{\equal{\cvbirthdate}{}}{}{\textsc{\Large\icon{\faCalendar}{10pt}} & \cvbirthdate\\}
+
         \ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\faMapMarker}{12pt}} & \cvaddress\\}
+		
+        \ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\faPhone}{12pt}} & \cvnumberphone\\}
         
         \ifthenelse{\equal{\cvsitepersonal}{}}{}{\textsc{\Large\icon{\faGlobe}{11pt}} & \href{https://\cvsitepersonal}{\textcolor{mainblue}{{\cvsitepersonal}}}\\}
         
