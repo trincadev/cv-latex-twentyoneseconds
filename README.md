@@ -86,3 +86,11 @@ I added some options about:
 - a way to hide the picture and display only the name / surname and job description row
 - custom side sections
 - removed a broken command (`\skillstext`)
+
+## 2023-09-01
+
+- now it's possible to add an arbitrary number of skill bar sections with custom section titles (see `\customskills` command)
+- improved clarity of \skills command
+- added some explanations about header and info profile sections
+- renamed `\cvdate` to `\cvbirthdate`, changed its icon to faCalendar
+- accepted a [pull request](https://github.com/trincadev/cv-latex-twentyoneseconds/pull/1)
