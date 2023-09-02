@@ -155,7 +155,7 @@
 	\renewcommand{\skills}{
 		\begin{tikzpicture}
 			\foreach [count=\i] \x/\y in {#1}{
-				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
+				\draw[fill=maingray,white] (0,\i) rectangle (6,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
 				\node [above right] at (0,\i+0.4) {\x};
 			}
@@ -198,7 +198,7 @@
         \ifthenelse{\equal{\cvbirthdate}{}}{}{\textsc{\Large\icon{\faCalendar}{10pt}} & \cvbirthdate\\}
 
         \ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\faMapMarker}{12pt}} & \cvaddress\\}
-		
+
         \ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\faPhone}{12pt}} & \cvnumberphone\\}
         
         \ifthenelse{\equal{\cvsitepersonal}{}}{}{\textsc{\Large\icon{\faGlobe}{11pt}} & \href{https://\cvsitepersonal}{\textcolor{mainblue}{{\cvsitepersonal}}}\\}
