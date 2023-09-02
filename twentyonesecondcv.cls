@@ -150,19 +150,6 @@
 % Command for printing the contact information icons
 \newcommand*\icon[2]{\tikz[baseline=(char.base)]{\node[shape=circle, draw, inner sep=1pt, fill=mainblue, mainblue, text=white, minimum size=16pt, font=\fontsize{#2}{12}\selectfont] (char) {#1};}}
 
-% Command for printing skill progress bars
-\newcommand\skills[1]{ 
-	\renewcommand{\skills}{
-		\begin{tikzpicture}
-			\foreach [count=\i] \x/\y in {#1}{
-				\draw[fill=maingray,white] (0,\i) rectangle (6,\i+0.4);
-				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-				\node [above right] at (0,\i+0.4) {\x};
-			}
-		\end{tikzpicture}
-	}
-}
-
 %----------------------------------------------------------------------------------------
 %	 SIDEBAR LAYOUT
 %----------------------------------------------------------------------------------------
@@ -216,20 +203,22 @@
     
 }
 
-\newcommand{\makeskillsprofile}{
-
-    %------------------------------------------------
-        % In case of longer "about me" or "languages" section, move languages to \makeprofileshort command
-        
-    \profilesection{Languages}
-
-    \skills
-    \bigskip
-    \scriptsize
-    Scale: 0 (basic skills) - 6 (expert).
-    \normalsize
+% Command for printing skill progress bars
+\newcommand{\customskills}[2]{
+    \profilesection{#1}
     
-    %------------------------------------------------
+    % In case of longer "about me" or "languages" section, move languages to \makeprofileshort command
+    \begin{tikzpicture}
+            \foreach [count=\i] \x/\y in {#2}{
+                % \rawskillrow{\x}{\y}{\i}
+                \draw[fill=maingray,white] (0,\i) rectangle (6,\i+0.4);
+                \draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
+                \node [above right] at (0,\i+0.4) {\x};
+            }
+    \end{tikzpicture}
+
+    \scriptsize Scale: 0 (basic skills) - 6 (expert). \normalsize
+    \smallskip
 }
 
 \newcommand{\aboutme}[1]{
