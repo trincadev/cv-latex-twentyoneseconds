@@ -148,7 +148,7 @@
 \newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
 
 % Command for printing the contact information icons
-\newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
+\newcommand*\icon[2]{\tikz[baseline=(char.base)]{\node[shape=circle, draw, inner sep=1pt, fill=mainblue, mainblue, text=white, minimum size=16pt, font=\fontsize{#2}{12}\selectfont] (char) {#1};}}
 
 % Command for printing skill progress bars
 \newcommand\skills[1]{ 
@@ -195,21 +195,21 @@
 
 \newcommand{\makeinfoprofile}{
     \begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
-        % \ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
-        % \ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
-        \ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\faMapMarker}} & \cvaddress\\}
+        % \ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\faInfo}{12pt}} & \cvdate\\}
+        % \ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\faPhone}{12pt}} & \cvnumberphone\\}
+        \ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\faMapMarker}{12pt}} & \cvaddress\\}
         
-        \ifthenelse{\equal{\cvsitepersonal}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{https://\cvsitepersonal}{\textcolor{mainblue}{{\cvsitepersonal}}}\\}
+        \ifthenelse{\equal{\cvsitepersonal}{}}{}{\textsc{\Large\icon{\faGlobe}{11pt}} & \href{https://\cvsitepersonal}{\textcolor{mainblue}{{\cvsitepersonal}}}\\}
         
-        \ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\Large\icon{\faGithub}} & \href{https://github.com/\cvgithub}{\textcolor{mainblue}{{\cvgithub}}}\\}
+        \ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\Large\icon{\faGithub}{11pt}} & \href{https://github.com/\cvgithub}{\textcolor{mainblue}{{\cvgithub}}}\\}
         
-        \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{@}} & \href{mailto:\cvmail}{\textcolor{mainblue}{{\cvmail}}}\\}
+        \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{\faAt}{11pt}} & \href{mailto:\cvmail}{\textcolor{mainblue}{{\cvmail}}}\\}
         
-        \ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}} & \href{https://www.linkedin.com/in/\cvlinkedin/en}{\textcolor{mainblue}{{\cvlinkedin}}}\\}
+        \ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}{11pt}} & \href{https://www.linkedin.com/in/\cvlinkedin/en}{\textcolor{mainblue}{{\cvlinkedin}}}\\}
         
-        \ifthenelse{\equal{\cvskypeurl}{}}{}{\textsc{\Large\icon{\faSkype}} & \href{skype:\cvskypeurl?chat}{\textcolor{black!80}{{\cvskypeurl}}}\\}
+        \ifthenelse{\equal{\cvskypeurl}{}}{}{\textsc{\Large\icon{\faSkype}{11pt}} & \href{skype:\cvskypeurl?chat}{\textcolor{black!80}{{\cvskypeurl}}}\\}
         
-        \ifthenelse{\equal{\cvstackoverflow}{}}{}{\textsc{\Large\icon{\faStackOverflow}} & \href{https://stackoverflow.com/users/\cvstackoverflow}{\textcolor{mainblue}{{\cvstackoverflow}}}\\}
+        \ifthenelse{\equal{\cvstackoverflow}{}}{}{\textsc{\Large\icon{\faStackOverflow}{10pt}} & \href{https://stackoverflow.com/users/\cvstackoverflow}{\textcolor{mainblue}{{\cvstackoverflow}}}\\}
     \end{tabular}
     
 }
