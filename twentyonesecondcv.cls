@@ -6,9 +6,6 @@
 % This template has been downloaded from:
 % http://www.LaTeXTemplates.com
 %
-%
-% profile image is from https://publicdomainvectors.org/photos/nayrhcrel-alice-32.png
-%
 % License
 % Original author:
 % Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
@@ -29,6 +26,7 @@
 %
 % This work consists of the files template.tex and twentyonesecondcv.cls
 % and the derived file twentyonesecondcv.pdf
+% see https://github.com/trincadev/cv-latex-twentyoneseconds/ for updates
 
 \ProvidesClass{twentyonesecondcv}[2017/01/08 CV class]
 \LoadClass{article}
@@ -204,7 +202,7 @@
 }
 
 % Command for printing skill progress bars
-\newcommand{\customskills}[2]{
+\newcommand{\customskills}[3]{
     \profilesection{#1}
     
     % In case of longer "about me" or "languages" section, move languages to \makeprofileshort command
@@ -217,7 +215,8 @@
             }
     \end{tikzpicture}
 
-    \scriptsize Scale: 0 (basic skills) - 6 (expert). \normalsize
+    % Show this description label only if optional third argument is not empty
+    \ifthenelse{\equal{#3}{}}{}{\scriptsize #3 \normalsize}
     \smallskip
 }
 

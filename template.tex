@@ -7,8 +7,6 @@
 % http://www.LaTeXTemplates.com
 %
 %
-% profile image is from https://publicdomainvectors.org/photos/nayrhcrel-alice-32.png
-%
 % License
 % Original author:
 % Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
@@ -29,6 +27,8 @@
 %
 % This work consists of the files template.tex and twentyonesecondcv.cls
 % and the derived file twentyonesecondcv.pdf
+%
+% see https://github.com/trincadev/cv-latex-twentyoneseconds/ for updates
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
@@ -132,14 +132,14 @@
     \customsidesection{Side section C, pag.2}{n sed ligula a turpis tristique interdum a ut risus. Nullam at euismod leo, ac molestie urna. Curabitur enim felis, ultricies quis dui ac, bibendum auctor dui. Proin aliquet nulla arcu, at pulvinar eros eleifend at. Aliquam erat volutpat.
     Duis augue mauris, aliquam sit amet lacinia ut, egestas sit amet est. Aliquam erat lacus, scelerisque non laoreet eu, commodo eget turpis. Nunc nunc mauris, lacinia sed semper quis, venenatis eget enim. Proin viverra in nibh at tincidunt.}
 
-    \customsidesection{Side section C, pag.2}{Use the }
+    \customsidesection{Progress bar skill sections}{The command \textbackslash\texttt{customskills\{Section title\}\{\{\},\{\},\{\}\}\{\}} take three argument (the last one is optional). The first argument is the section title, e.g. \texttt{Languages}. The second macro argument is an array of couples made by words and float numbers separated by slashes, e.g. \texttt{\{\{Latin/4.3\},\{Greek/6\}\}}; the number of course represents how much the skill ability is high. This array separator is a comma. Note that the array order is reversed: in the output list created by the example above has the word "Greek" before "Latin".}
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \customskills{Languages skill}{{Latin/4},{Greek/6}}
+    \customskills{Languages skill}{{Latin/4},{Greek/6}}{}
 
-    \customskills{Card games}{{Poker/1},{Black Jack/5},{Freecell/2},{Spider/3}}
+    \customskills{Card games}{{Poker/1},{Black Jack/5},{Freecell/2},{Spider/3}}{Scale: 0 (basic skills) - 6 (expert).}
     
     \par\vfill
     

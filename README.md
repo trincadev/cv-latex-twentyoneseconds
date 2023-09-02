@@ -87,9 +87,9 @@ I added some options about:
 - custom side sections
 - removed a broken command (`\skillstext`)
 
-## 2023-09-01
+### 2023-09-01
 
-- now it's possible to add an arbitrary number of skill bar sections with custom section titles (see `\customskills` command)
+- now it's possible to add an arbitrary number of skill bar sections with custom section titles, custom legends and custom skill values (see `\customskills` command)
 - improved clarity of \skills command
 - added some explanations about header and info profile sections
 - renamed `\cvdate` to `\cvbirthdate`, changed its icon to faCalendar
