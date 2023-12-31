@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Twenty One Seconds Resume/CV
 % LaTeX Template
-% Version 1.0 (2022/12/29)
+% Version 1.1 (2023/12/31)
 %
 % This template has been downloaded from:
 % http://www.LaTeXTemplates.com
@@ -128,17 +128,19 @@
 % show different url and colorize 
 \newcommand{\colorhrefcustom}[2]{\href{#1}{\textcolor{bluecolorurl}{{#2}}}}
 \newcommand{\colorhref}[1]{
-    \colorhrefcustom{#1}{#1}
+    \colorhrefcustom{https://#1}{#1}
 }
 
 % Define custom commands for CV info
 \newcommand{\cvbirthdate}[1]{\renewcommand{\cvbirthdate}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
+\newcommand{\cvaddressurl}[1]{\renewcommand{\cvaddressurl}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvsitepersonal}[1]{\renewcommand{\cvsitepersonal}{#1}}
 \newcommand{\cvstackoverflow}[1]{\renewcommand{\cvstackoverflow}{#1}}
 \newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
+\newcommand{\cvskypeurlbase}[1]{\renewcommand{\cvskypeurlbase}{#1}}
 \newcommand{\cvskypeurl}[1]{\renewcommand{\cvskypeurl}{#1}}
 \newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
@@ -182,21 +184,31 @@
     \begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
         \ifthenelse{\equal{\cvbirthdate}{}}{}{\textsc{\Large\icon{\faCalendar}{10pt}} & \cvbirthdate\\}
 
-        \ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\faMapMarker}{12pt}} & \cvaddress\\}
+        \ifthenelse{
+                \equal{\cvaddress}{}
+        }{}{
+                \ifthenelse{
+                        \equal{\cvaddressurl}{}
+                }{
+                        \textsc{\Large\icon{\faMapMarker}{12pt}} & \cvaddress
+                }{
+                        \textsc{\Large\icon{\faMapMarker}{12pt}} & \colorhrefcustom{https://\cvaddressurl}{\cvaddress}
+                }
+        \\}
 
         \ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\faPhone}{12pt}} & \cvnumberphone\\}
         
-        \ifthenelse{\equal{\cvsitepersonal}{}}{}{\textsc{\Large\icon{\faGlobe}{11pt}} & \href{https://\cvsitepersonal}{\textcolor{mainblue}{{\cvsitepersonal}}}\\}
+        \ifthenelse{\equal{\cvsitepersonal}{}}{}{\textsc{\Large\icon{\faGlobe}{11pt}} & \colorhref{\cvsitepersonal}\\}
         
-        \ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\Large\icon{\faGithub}{11pt}} & \href{https://github.com/\cvgithub}{\textcolor{mainblue}{{\cvgithub}}}\\}
-        
-        \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{\faAt}{11pt}} & \href{mailto:\cvmail}{\textcolor{mainblue}{{\cvmail}}}\\}
-        
-        \ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}{11pt}} & \href{https://www.linkedin.com/in/\cvlinkedin/en}{\textcolor{mainblue}{{\cvlinkedin}}}\\}
-        
-        \ifthenelse{\equal{\cvskypeurl}{}}{}{\textsc{\Large\icon{\faSkype}{11pt}} & \href{skype:\cvskypeurl?chat}{\textcolor{black!80}{{\cvskypeurl}}}\\}
-        
-        \ifthenelse{\equal{\cvstackoverflow}{}}{}{\textsc{\Large\icon{\faStackOverflow}{10pt}} & \href{https://stackoverflow.com/users/\cvstackoverflow}{\textcolor{mainblue}{{\cvstackoverflow}}}\\}
+        \ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\Large\icon{\faGithub}{11pt}} & \colorhrefcustom{https://github.com/\cvgithub}{\cvgithub}\\}
+
+        \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{\faAt}{11pt}} & \colorhrefcustom{mailto:\cvmail}{\cvmail}\\}
+
+        \ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}{11pt}} & \colorhrefcustom{https://www.linkedin.com/in/\cvlinkedin/en}{\cvsitepersonal}\\}
+
+        \ifthenelse{\equal{\cvskypeurl}{}}{}{\textsc{\Large\icon{\faSkype}{11pt}} & \colorhrefcustom{https://\cvskypeurlbase}{\cvskypeurl}\\}
+
+        \ifthenelse{\equal{\cvstackoverflow}{}}{}{\textsc{\Large\icon{\faStackOverflow}{10pt}} & \colorhrefcustom{https://stackoverflow.com/users/\cvstackoverflow}{\cvstackoverflow}\\}
     \end{tabular}
     
 }

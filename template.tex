@@ -44,10 +44,12 @@
 %% See https://tex.stackexchange.com/a/692525/109031
 \cvbirthdate{15 August 1980}
 \cvnumberphone{+01 2345678901}
+\cvaddressurl{www.google.com/maps/place/Roma+RM/@41.9099533,12.371191,11z/}
 \cvaddress{Address, Nation}        % Short address/location, use \newline if more than 1 line is required
-\cvsitepersonal{example.com}       % personal site
+\cvsitepersonal{www.example.com}       % personal site
 \cvstackoverflow{9999999999876}
 \cvlinkedin{name-surname-linkedin}
+\cvskypeurlbase{join.skype.com/invite/id-random-skype-invite} % Skype 
 \cvskypeurl{name-surname-skype}
 \cvgithub{name-surname-github}     
 \cvmail{name@surname.com}
@@ -60,13 +62,13 @@
     \aboutme{Short section about myself.}
     \customsidesection{Header profile section}{It's possible to hide the profile picture using \textbackslash\texttt{makeheaderprofilenoimg} instead than \textbackslash\texttt{makeheaderprofilenoimg} and then \textbackslash\texttt{profilepic\{image.png\}} can be removed.}
     \customsidesection{Info profile section}{It's possible to hide rows created with \textbackslash\texttt{makeinfoprofile} command leaving the macros empty (e.g. \textbackslash\texttt{cvsitepersonal\{\}} instead than \textbackslash\texttt{cvsitepersonal\{example.com\}}).}
-    \customsidesection{Side section B, pag.1}{Integer condimentum sit amet dui sed fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum.}
+    \customsidesection{About the info profile commands}{If not empty the \textbackslash\texttt{cvaddressurl\{\}} command create a custom hyperlink containing the \textbackslash\texttt{cvaddress\{Address, Nation\}} text. Same concept for \textbackslash\texttt{cvskypeurlbase\{join.skype.com/...\}} and \textbackslash\texttt{cvskypeurl\{skype-username\}} (to create an invite url read the \colorhrefcustom{https://support.skype.com/en/faq/FA34802/}{skype FAQs}).}
     \par\vfill
     \makefooterprofile{Footer profile for page one.}{Footer profile row two with some more informations.}
     
 }
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% for some reason yoy can't have a new line here...
+% for some reason it's impossible to have a new line here...
 \mainsection{
     
     \section{Bibliography}
@@ -106,7 +108,7 @@
     
     \begin{twentymid} % Environment for a list with descriptions  
         \twentymiditem{since 2020}{I learned some interesting things on this \colorhrefcustom{https://wikipedia.it}{website}, then I moved on.}{Org}
-        \twentymiditem{10/2015}{I added some fancy pages on \colorhref{https://wikipedia.org}}{Org 2}
+        \twentymiditem{10/2015}{I added some fancy pages on \colorhref{wikipedia.org}}{Org 2}
         \twentymiditem{1990 - 2015}{Second list element. Nunc rhoncus a nunc ac varius. Integer condimentum sit amet dui sed fringilla.}{Organization name}
         \twentymiditem{12/1998}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit a nisi nec fermentum. Praesent sed leo fringilla}{\colorhrefcustom{https://commons.wikimedia.org/wiki/Main_Page}{wikipedia}}
     \end{twentymid}
