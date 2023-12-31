@@ -79,6 +79,10 @@ I published this latex template on this [overleaf page](https://www.overleaf.com
 
 ## Updates
 
+### 2023-12-31
+
+Added options to transform address and skype rows into urls
+
 ### 2023-05-15
 
 I added some options about:
