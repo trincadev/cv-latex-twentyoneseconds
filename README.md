@@ -83,14 +83,6 @@ I published this latex template on this [overleaf page](https://www.overleaf.com
 
 Added options to transform address and skype rows into urls
 
-### 2023-05-15
-
-I added some options about:
-
-- a way to hide the picture and display only the name / surname and job description row
-- custom side sections
-- removed a broken command (`\skillstext`)
-
 ### 2023-09-01
 
 - now it's possible to add an arbitrary number of skill bar sections with custom section titles, custom legends and custom skill values (see `\customskills` command)
@@ -98,3 +90,11 @@ I added some options about:
 - added some explanations about header and info profile sections
 - renamed `\cvdate` to `\cvbirthdate`, changed its icon to faCalendar
 - accepted a [pull request](https://github.com/trincadev/cv-latex-twentyoneseconds/pull/1)
+
+### 2023-05-15
+
+I added some options about:
+
+- a way to hide the picture and display only the name / surname and job description row
+- custom side sections
+- removed a broken command (`\skillstext`)
