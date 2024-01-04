@@ -204,7 +204,7 @@
 
         \ifthenelse{\equal{\cvmail}{}}{}{\textsc{\Large\icon{\faAt}{11pt}} & \colorhrefcustom{mailto:\cvmail}{\cvmail}\\}
 
-        \ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}{11pt}} & \colorhrefcustom{https://www.linkedin.com/in/\cvlinkedin/en}{\cvsitepersonal}\\}
+        \ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}{11pt}} & \colorhrefcustom{https://www.linkedin.com/in/\cvlinkedin/en}{\cvlinkedin}\\}
 
         \ifthenelse{\equal{\cvskypeurl}{}}{}{\textsc{\Large\icon{\faSkype}{11pt}} & \colorhrefcustom{https://\cvskypeurlbase}{\cvskypeurl}\\}
 
