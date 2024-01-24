@@ -79,6 +79,14 @@ I published this latex template on this [overleaf page](https://www.overleaf.com
 
 ## Updates
 
+### 2023-01-24
+
+- pull request from [giocic2](https://github.com/giocic2/): fixed unwanted bfseries redefinition
+
+### 2023-01-04
+
+- fixed wrong \cvlinkedin command
+
 ### 2023-12-31
 
 Added options to transform address and skype rows into urls
@@ -89,7 +97,7 @@ Added options to transform address and skype rows into urls
 - improved clarity of \skills command
 - added some explanations about header and info profile sections
 - renamed `\cvdate` to `\cvbirthdate`, changed its icon to faCalendar
-- accepted a [pull request](https://github.com/trincadev/cv-latex-twentyoneseconds/pull/1)
+- accepted a [pull request](https://github.com/trincadev/cv-latex-twentyoneseconds/pull/1) from [JeromeHen](https://github.com/JeromeHen/)
 
 ### 2023-05-15
 
