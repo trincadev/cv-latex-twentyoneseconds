@@ -73,7 +73,7 @@
 \definecolor{maingray}{HTML}{f2f2f2}
 \definecolor{bluecolorurl}{HTML}{142376}
 
-\renewcommand{\bfseries}{\color{gray}} % Make \textbf produce coloured text instead
+\newcommand{\graytext}[1]{\textcolor{gray}{#1}}
 
 % ------------------ page layout ------------------------- %
 
@@ -297,7 +297,7 @@
 		#2 %
 		\hfill%
 		{\footnotesize#3}\\%
-		\textbf{#4}\vspace{\parsep}%
+		\graytext{#4}\vspace{\parsep}%
 	}\\
 }
 
@@ -340,7 +340,7 @@
 \newcommand{\twentyitemshort}[2]{%
 	#1&\parbox[t]{0.83\textwidth}{%
 		% \textbf{#2}%
-		\textbf{#2}
+		\graytext{#2}
 	}\\
 }
 
